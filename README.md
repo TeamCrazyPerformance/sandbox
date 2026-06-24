@@ -1,5 +1,2 @@
-# sandbox
-sandbox that can be destoryed
-
-# 내가 만든 내 왕국
-나만의 놀이터 으하하
+# 으휴 이 초딩들 초딩들
+# 김재민 윤태완 이 초딩들
