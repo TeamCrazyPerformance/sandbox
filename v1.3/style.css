@@ -1,0 +1,390 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --text-subtitle: rgb(73, 73, 73);
+    --text-muted: gray;
+    --border-color: rgb(187, 186, 186);
+    --link-hover-color: rgb(117, 117, 117);
+    --link-hover-border: black;
+    
+    /* 방명록 관련 */
+    --comment-border: #c1bcba;
+    --submit-bg: rgb(0, 128, 255);
+    --submit-text: aliceblue;
+    --vote-bg: aqua;
+    --vote-text: black;
+    --delete-bg: red;
+    --delete-text: aliceblue;
+}
+
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --text-subtitle: #b0b0b0;
+    --text-muted: #888888;
+    --border-color: #333333;
+    --link-hover-color: #cccccc;
+    --link-hover-border: #e0e0e0;
+    
+    /* 방명록 관련 */
+    --comment-border: #444444;
+    --submit-bg: #1e88e5;
+    --submit-text: #ffffff;
+    --vote-bg: #008b8b;
+    --vote-text: #ffffff;
+    --delete-bg: #d32f2f;
+    --delete-text: #ffffff;
+}
+
+body {
+    margin: 0;
+    border: none;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.block {
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-rows: 160px 1fr 100px;
+}
+
+.grid {
+    /* border: 1px solid black; */
+}
+
+.title {
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 20px;
+    font-family: 'Jua', sans-serif;
+    color: var(--text-color);
+}
+
+#menu {
+    width: 800px;
+    height: 70px;
+    margin-top: 50px;
+}
+
+#menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+#menu ul li {
+    list-style: none;
+    float: left;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 33px;
+    margin-left: 0;
+}
+
+#home {
+    width: 40px;
+}
+
+#visit {
+    width: 70px;
+}
+
+#intro {
+    width: 110px;
+}
+
+#menu .link {
+    text-decoration: none;
+    display: block;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+#menu .link:hover {
+    color: var(--link-hover-color);
+    border-bottom: 3px solid var(--link-hover-border);
+}
+
+.writing {
+    border-bottom: 1px solid var(--border-color);
+    width: 1fr;
+    margin: 20px;
+    padding-bottom: 10px;
+    font-size: 14pt;
+    margin-top: 100px;
+    color: var(--text-color);
+}
+
+.post {
+    display: grid;
+    width: 800px;
+    margin-left: 20px;
+    grid-template-columns: 4fr 1fr;
+}
+
+.post:hover .blog {
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+}
+
+.subtitle > a {
+    color: var(--text-subtitle);
+}
+
+.subtitle {
+    width: 600px;
+    font-size: 20px;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--text-subtitle);
+}
+
+#contents {
+    height: 65px;
+    width: 600px;
+    font-weight: 500;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    color: var(--text-muted);
+}
+
+#day {
+    font-size: 10pt;
+    color: var(--text-muted);
+}
+
+.img {
+    height: 120px;
+    width: 120px;
+    background-image: url('https://zrr.kr/Hpm5');
+    background-size: cover;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-position: center;
+}
+
+#blog1 {
+    height: 120px;
+    width: 120px;
+    background-image: url('https://cdn.codingworldnews.com/news/photo/202010/img_1607_0.jpg');
+    background-size: cover;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-position: center;
+}
+
+#blog2 {
+    height: 120px;
+    width: 120px;
+    background-image: url('../임베디드 사진1.PNG');
+    background-size: cover;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-position: center;
+}
+
+.address {
+    width: 400px;
+    margin-top: 35px;
+    color: var(--text-muted);
+    margin-left: 20px;
+}
+
+/* ── 방명록 관련 ── */
+#form-commentInfo {
+    width: 100%;
+}
+
+#comment-count {
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+#comment-input {
+    width: 50%;
+    height: 3.3em;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+#submit {
+    background-color: var(--submit-bg);
+    width: 5.5em;
+    height: 3.3em;
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--submit-text);
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+}
+
+#voteUp, #voteDown {
+    width: 6.5em;
+    height: 1.9em;
+    background-color: var(--vote-bg);
+    color: var(--vote-text);
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#comments {
+    margin-top: 10px;
+}
+
+.eachComment {
+    width: 50%;
+    margin: 10px;
+    padding: 0.5em;
+    border-bottom: 1px solid var(--comment-border);
+}
+
+.eachComment .name {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0.3em;
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-color);
+}
+
+.eachComment .inputValue {
+    font-size: 1.2em;
+    font-style: italic;
+    color: var(--text-color);
+}
+
+.eachComment .time {
+    font-size: 0.7em;
+    color: var(--text-muted);
+    font-style: oblique;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.eachComment .voteDiv {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.eachComment .deleteComment {
+    background-color: var(--delete-bg);
+    color: var(--delete-text);
+    border: none;
+    cursor: pointer;
+}
+
+/* ── 다크모드 absolute 버튼 ── */
+#theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    padding: 4px 8px;
+    font-family: sans-serif;
+    font-size: 9pt;
+    z-index: 10;
+}
+
+.sidebar {
+    padding: 20px;
+    margin-top: 100px; /* 메인 글목록 전체 글 마진과 동일 선상 배치 */
+}
+
+/* 프로필 박스 */
+.profile-box {
+    margin-bottom: 35px;
+}
+
+.profile-avatar {
+    width: 60px;
+    height: 60px;
+    background-color: var(--border-color);
+    color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Jua', sans-serif;
+    margin-bottom: 12px;
+}
+
+.profile-name {
+    font-size: 14pt;
+    font-weight: bold;
+    font-family: 'Jua', sans-serif;
+    margin-bottom: 6px;
+    color: var(--text-color);
+}
+
+.profile-bio {
+    font-size: 9.5pt;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.profile-links {
+    font-size: 9pt;
+    color: var(--text-muted);
+}
+
+.profile-links a {
+    color: var(--text-subtitle);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.profile-links a:hover {
+    text-decoration: underline;
+    color: var(--text-color);
+}
+
+/* 카테고리 박스 */
+.category-box {
+    margin-top: 10px;
+}
+
+.sidebar-title {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 6px;
+    font-size: 12pt;
+    font-family: 'Jua', sans-serif;
+    margin-bottom: 12px;
+    color: var(--text-color);
+}
+
+.category-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.category-list li {
+    margin-bottom: 8px;
+}
+
+.category-list a {
+    font-size: 10pt;
+    color: var(--text-subtitle);
+    text-decoration: none;
+}
+
+.category-list a:hover {
+    text-decoration: underline;
+    color: var(--text-color);
+}

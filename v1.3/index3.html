@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>홈페이지</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body{
+            margin: 0;
+            border: none;
+        }
+        .block{
+        display: grid;
+        grid-template-columns: 1fr 3fr 2fr;
+        grid-template-rows: 160px 1fr 100px;
+        }
+        .grid{
+             /* border: 1px solid black; */
+            }
+        .title{
+            /* border: 1px solid black; */
+            width: 300px;
+            margin-left: 50px;
+            margin-top: 20px;
+            font-family: 'Jua', sans-serif;
+            
+        }
+
+        #menu{
+            width: 800px;
+            height: 70px;
+            /* border: 1px solid black; */
+            margin-top: 50px;
+        }
+        #menu ul li{
+            list-style: none;
+            float: left;
+            line-height: 30px;
+            text-align: center;
+            margin-right:33px;
+            margin-left: 0;
+        }
+        #home{
+            width: 40px;
+        }
+        #visit{
+            width: 70px;
+        }
+        #intro{
+            width: 110px;
+        }
+        #menu .link{
+            text-decoration: none;
+            display: block;
+            color: black;
+            font-weight: bold;
+        }
+        #menu .link:hover{
+            color:rgb(117, 117, 117);
+            border-bottom: 3px solid black;
+        }
+        .writing{
+            /* border: 1px solid black; */
+            width: 100%;
+            padding-bottom: 10px;
+            padding-left: 0;
+            text-align: left;
+            font-size: 40pt;
+            font-weight: 500;
+            color: black;
+            font-family: 'Do Hyeon', sans-serif;
+            margin-top: -10px;
+            
+
+        }
+        .post{
+            display: grid;
+            /* border: 1px solid black; */
+            width: 800px;
+            margin-left: 20px;
+            grid-template-columns: 4fr 1fr;
+        }
+        .post:hover .blog{
+            color: black; 
+            text-decoration: underline;
+        }
+        a{
+            text-decoration: none;
+        }
+        .subtitle > a{
+            color: rgb(73, 73, 73);
+        }
+        .subtitle{
+        width: 600px;
+        font-size: 20px;
+        font-weight: 700;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        /* border: 1px solid black; */
+        color: rgb(73, 73, 73);
+        }
+        /* .subtitle > a:hover{
+            
+        color: black; 
+        text-decoration: underline;
+            
+        } */
+
+        #contents{
+        height: 60px;
+        width: 600px;
+        font-weight: 500;
+        overflow: hidden;
+        /* border: 1px solid black; */
+        display: -webkit-box; 
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        color: gray;
+        }
+        #day{
+            font-size: 10pt;
+            color: gray;
+        }
+        .address{
+            /* border: 1px solid black; */
+            width: 400px;
+            margin-top: 35px;
+            color: gray;
+            margin-left: 20px;
+        }
+        /* #title{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("http://www.koreaisacademy.com/renewal2016/img/curriculum/smart01.jpg");
+            background-size: cover; 
+        }*/
+        .inf{
+            width: 100%;
+            border-bottom: 1px solid gray;
+            padding-bottom: 30px;
+            color: gray;
+        }
+       .tag{
+        /* border: 1px solid black; */
+        margin-top: 70px;
+        font-weight: bold;
+       }
+       .contents{
+        font-size: 14pt;
+       }
+    </style>
+</head>
+<body>
+    <div class="block">
+            <div class="grid" style="border-bottom: 1px solid rgb(187, 186, 186);"></div> <!-- 빈공간 -->
+            <div class="grid" style="border-bottom: 1px solid  rgb(187, 186, 186);">
+                <h1 class="title" style=" cursor: pointer;" onclick="location.href='index.html';">재민's web</h1>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="index.html" class="link" id="home">홈</a></li>
+                        <li><a href="방명록.html" class="link" id="visit">방명록</a></li>
+                        <li><a href="intro.html" class="link" id="intro">홈페이지 소개</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="grid" style="border-bottom: 1px solid  rgb(187, 186, 186);"></div> <!-- 빈공간 -->
+
+            
+            
+            
+            
+            
+            
+            <div class="grid"></div> <!-- 빈공간 -->
+            <div class="grid" id="title">
+                <h4 class="tag">진로정보공유</h4>
+                <h1 class="writing">임베디드 소프트웨어</h1>
+                <h5 class="inf">김재민 2026.06.29</h5>
+                <div style="background-image: url('임베디드\ 사진1.PNG'); width: 450px; height: 300px; background-size: cover; background-position: center;"></div>
+                <h2>임베디드 소프트웨어</h2>
+                <p class="contents">임베디드 소프트웨어는 일상에서 접하는 휴대폰, TV, 세탁기 등의 제품 안에 내장된 임베디드 시스템에서 하드웨어를 제외한 나머지 부분을 일컫는다.</p>
+                <br><br><br>
+                <div style="background-image: url('임베디드\ 사진2.PNG'); width: 450px; height: 300px; background-size: cover; background-position: center;"></div>
+                <p class="contents">초기에는 간단한 제어 프로그램만 산업용 기기를 제어하는데 그쳤으나, 최근에는 멀티미디어 처리와 같은 점차 복잡한 기능을 요구하기 시작하였고 
+                    네트워크 기능을 제공하는 임베디드 운영체제를 탑재하여 인터넷을 통해 제품에 대한 감시가 가능해졌다. 더 나아가 임베디드 시스템에 탑재된 유무선 통신망을 통해 
+                    수시로 업데이트할 수 있는 임베디드 소프트웨어 플랫폼이 출현하기에 이르렀다.</p>
+                <br><br><br>
+                <div style="background-image: url('임베디드\ 사진3.PNG'); width: 450px; height: 300px; background-size: cover; background-position: center;"></div>
+                    <h2>임베디드 소프트웨어의 특징</h2>
+                    <p class="contents">
+                    1.임베디드 소프트웨어가 실행되는 시스템의 용도에 따라 연선 혹은 경성 <br>실시간 처리를 지원하여야 한다.<br>
+                    2.소프트웨어 오작동 및 작동중지가 허용되지 않는 임베디드 시스템에서는 <br>고도의 신뢰성이 요구된다.<br>
+                    3.임베디드 소프트웨어는 경량화, 저전력 지원, 자원의 효율적 관리 등의 <br>하드웨어에 최적화되는 기술을 지원하여야 한다.<br>
+                    4.범용 데스크탑 또는 서버에서 실행되는 소프트웨어와 달리 특정 시스템의 실행을 <br>목적으로 개발되는 소프트웨어라는 점에서 차이가 나타난다.</p>
+                    <br><br><br><br>
+           
+           
+           
+           
+                <div id="form-commentInfo">
+                    <div id="comment-count">댓글 <span id="count">0</span></div>
+                    <input id="comment-input" placeholder="댓글을 입력해 주세요.">
+                    <button id="submit">등록</button>
+                </div>
+                <div id=comments>
+            
+                </div>
+                <script src="index.js"></script>
+            </div>
+               
+
+            <div class="grid"></div> <!-- 빈공간 -->
+            
+            
+            
+            
+            
+            
+            
+            <div class="grid" style="border-top: 1px solid rgb(187, 186, 186);"></div>  <!-- 빈공간 -->
+            <div class="grid" style="border-top: 1px solid rgb(187, 186, 186);">
+                <p class="address">TEL. 010.4491.9291 </p>
+                
+            </div>
+            <div class="grid" style="border-top: 1px solid rgb(187, 186, 186);"></div>  <!-- 빈공간 -->
+        </div>
+                 
+</body>
+</html>

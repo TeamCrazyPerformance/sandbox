@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홈페이지</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="theme.js"></script>
+</head>
+<body>
+    <div class="block">
+            <div class="grid" style="border-bottom: 1px solid rgb(187, 186, 186);"></div> <!-- 빈공간 -->
+            <div class="grid" style="border-bottom: 1px solid  rgb(187, 186, 186); position: relative;">
+                <h1 class="title" style=" cursor: pointer;" onclick="location.href='index.html';">재민's web</h1>
+                <button id="theme-toggle">다크 모드</button>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="index.html" class="link" id="home">홈</a></li>
+                        <li><a href="방명록.html" class="link" id="visit">방명록</a></li>
+                        <li><a href="intro.html" class="link" id="intro">홈페이지 소개</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="grid" style="border-bottom: 1px solid  rgb(187, 186, 186);"></div> <!-- 빈공간 -->
+
+            <div class="grid"></div> <!-- 빈공간 -->
+            <div class="grid" style="border-right: 1px solid  rgb(187, 186, 186);;">
+                <h2 class="writing">전체 글</h2>
+                
+                <div class="post" style=" cursor: pointer;" onclick="location.href='index2.html';">
+                 <div>
+                    <h3 class="subtitle"><a href="index2.html" class="blog">앱개발자 vs 웹개발자 자세히 알아보자!</a></h3>
+                    <p id="contents">스마트폰 앱 개발자는 앱(애플리케이션의 줄인 말, 스마트폰에 다운로드해 사용할 수 있는 응용프로그램을 통칭하는 의미)
+                         프로그램의 아이템을 기획하고 개발하는 일을 합니다. 하나의 앱은 보통 기획, 디자인, 개발의 과정을 거쳐 만들어집니다. 
+                         먼저 아이디어를 바탕으로 기존 앱과의 차별성, 시장성, 기술적 구현 가능성 등을 판단하여 앱의 개발 여부를 결정합니다. 
+                         앱을 만들기로 결정하였다면 앱의 목표 기능, 디자인 등을 정하여 앱을 개발합니다. 개발이 완료되면 내부에서 테스트를 실시하여 
+                         오류나 강화할 사항을 확인하고, 앱을 판매하는 스토어에 등록합니다. 사용자들에게 서비스를 하면서 앱의 오류를 지속적으로 수정하고 
+                         최신 버전으로 업데이트하는 등의 관리도 스마트폰 앱 개발자의 업무입니다.
+                    </p>
+                    <p id="day">2022.08.16.</p>
+                    
+                 </div>
+                 <div><div id="blog1"></div> </div>
+                </div>
+                 
+                <div class="post" style=" cursor: pointer;" onclick="location.href='index3.html';"> <!--여기서부터 -->
+                 <div>
+                    <h3 class="subtitle"><a href="index3.html" class="blog">임베디드 소프트웨어</a></h3>
+                    <p id="contents">임베디드 소프트웨어는 일상에서 접하는 휴대폰, TV, 세탁기 등의 제품 안에 내장된 임베디드 시스템에서 하드웨어를 제외한 나머지 부분을 일컫는다.
+                         초기에는 간단한 제어 프로그램만 산업용 기기를 제어하는데 그쳤으나, 최근에는 멀티미디어 처리와 같은 점차 복잡한 기능을 요구하기 시작하였고 네트워크 기능을 
+                         제공하는 임베디드 운영체제를 탑재하여 인터넷을 통해 제품에 대한 감시가 가능해졌다. 
+                    </p>
+                    <p id="day">2022.08.16.</p>
+                    
+                 </div>
+                 <div><div id="blog2"></div> </div>
+                 </div> <!--여기까지 -->
+                
+                <div class="post" style=" cursor: pointer;" onclick="location.href='oldpage.html';"> <!--여기서부터 -->
+                    <div>
+                       <h3 class="subtitle"><a href="oldpage.html" class="blog">임시 블로그</a></h3>
+                       <p id="contents">이곳은 임시용으로 지어진 블로그 입니다.
+                       </p>
+                       <p id="day">2022.08.16.</p>
+                       
+                    </div>
+                    <div><div class="img"></div> </div>
+                </div> 
+
+                <div class="post" style=" cursor: pointer;" onclick="location.href='oldpage.html';"> <!--여기서부터 -->
+                        <div>
+                           <h3 class="subtitle"><a href="oldpage.html" class="blog">임시 블로그</a></h3>
+                           <p id="contents">이곳은 임시용으로 지어진 블로그 입니다.
+                           </p>
+                           <p id="day">2022.08.16.</p>
+                           
+                        </div>
+                        <div><div class="img"></div> </div>
+                </div> 
+                <br><br><br><br><br><br>
+            
+            </div>
+
+            <!-- 우측 여백 영역 (v1.3 프로필 및 카테고리 사이드바 배치) -->
+            <div class="grid sidebar">
+                <div class="profile-box">
+                    <div class="profile-avatar">JM</div>
+                    <div class="profile-name">재민</div>
+                    <div class="profile-bio">잡다한 IT 지식을 기록하고 공부하는 개인 공간입니다.</div>
+                    <div class="profile-links">
+                        <a href="https://github.com" target="_blank">GitHub</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                        <a href="mailto:jaemin@example.com">Email</a>
+                    </div>
+                </div>
+
+                <div class="category-box">
+                    <h3 class="sidebar-title">카테고리</h3>
+                    <ul class="category-list">
+                        <li><a href="index.html">전체보기 (4)</a></li>
+                        <li><a href="index.html">개발 지식 (2)</a></li>
+                        <li><a href="index.html">임베디드 (1)</a></li>
+                        <li><a href="index.html">일상/임시 (1)</a></li>
+                    </ul>
+                </div>
+            </div> 
+            
+            <div class="grid" style="border-top: 1px solid rgb(187, 186, 186);"></div>  <!-- 빈공간 -->
+            <div class="grid" style="border-top: 1px solid rgb(187, 186, 186);">
+                <p class="address">TEL. 010.4491.9291 </p>
+            </div>
+            <div class="grid" style="border-top: 1px solid rgb(187, 186, 186);"></div>  <!-- 빈공간 -->
+    </div>
+</body>
+</html>

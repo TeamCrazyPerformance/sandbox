@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>홈페이지</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body{
+            margin: 0;
+            border: none;
+        }
+        .block{
+        display: grid;
+        grid-template-columns: 1fr 3fr 2fr;
+        grid-template-rows: 160px 1fr 100px;
+        }
+        .grid{
+             /* border: 1px solid black; */
+            }
+        .title{
+            /* border: 1px solid black; */
+            width: 300px;
+            margin-left: 50px;
+            margin-top: 20px;
+            font-family: 'Jua', sans-serif;
+            
+        }
+
+        #menu{
+            width: 800px;
+            height: 70px;
+            /* border: 1px solid black; */
+            margin-top: 50px;
+        }
+        #menu ul li{
+            list-style: none;
+            float: left;
+            line-height: 30px;
+            text-align: center;
+            margin-right:33px;
+            margin-left: 0;
+        }
+        #home{
+            width: 40px;
+        }
+        #visit{
+            width: 70px;
+        }
+        #intro{
+            width: 110px;
+        }
+        #menu .link{
+            text-decoration: none;
+            display: block;
+            color: black;
+            font-weight: bold;
+        }
+        #menu .link:hover{
+            color:rgb(117, 117, 117);
+            border-bottom: 3px solid black;
+        }
+        .writing{
+            /* border: 1px solid black; */
+            width: 100%;
+            padding-bottom: 10px;
+            padding-left: 0;
+            text-align: left;
+            font-size: 40pt;
+            font-weight: 500;
+            color: black;
+            font-family: 'Do Hyeon', sans-serif;
+            margin-top: -10px;
+            
+
+        }
+        .post{
+            display: grid;
+            /* border: 1px solid black; */
+            width: 800px;
+            margin-left: 20px;
+            grid-template-columns: 4fr 1fr;
+        }
+        .post:hover .blog{
+            color: black; 
+            text-decoration: underline;
+        }
+        a{
+            text-decoration: none;
+        }
+        .subtitle > a{
+            color: rgb(73, 73, 73);
+        }
+        .subtitle{
+        width: 600px;
+        font-size: 20px;
+        font-weight: 700;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        /* border: 1px solid black; */
+        color: rgb(73, 73, 73);
+        }
+        /* .subtitle > a:hover{
+            
+        color: black; 
+        text-decoration: underline;
+            
+        } */
+
+        #contents{
+        height: 60px;
+        width: 600px;
+        font-weight: 500;
+        overflow: hidden;
+        /* border: 1px solid black; */
+        display: -webkit-box; 
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        color: gray;
+        }
+        #day{
+            font-size: 10pt;
+            color: gray;
+        }
+        .address{
+            /* border: 1px solid black; */
+            width: 400px;
+            margin-top: 35px;
+            color: gray;
+            margin-left: 20px;
+        }
+        /* #title{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("http://www.koreaisacademy.com/renewal2016/img/curriculum/smart01.jpg");
+            background-size: cover; 
+        }*/
+        .inf{
+            width: 100%;
+            border-bottom: 1px solid gray;
+            padding-bottom: 30px;
+            color: gray;
+        }
+       .tag{
+        /* border: 1px solid black; */
+        margin-top: 70px;
+        font-weight: bold;
+       }
+       .contents{
+        font-size: 14pt;
+        margin-top: 50px;
+        margin-bottom: 10px;
+       }
+    </style>
+</head>
+<body>
+    <div class="block">
+            <div class="grid" style="border-bottom: 1px solid rgb(187, 186, 186);"></div> <!-- 빈공간 -->
+            <div class="grid" style="border-bottom: 1px solid  rgb(187, 186, 186);">
+                <h1 class="title" style=" cursor: pointer;" onclick="location.href='index.html';">재민's web</h1>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="index.html" class="link" id="home">홈</a></li>
+                        <li><a href="방명록.html" class="link" id="visit">방명록</a></li>
+                        <li><a href="intro.html" class="link" id="intro">홈페이지 소개</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="grid" style="border-bottom: 1px solid  rgb(187, 186, 186);"></div> <!-- 빈공간 -->
+
+            
+            
+            
+            
+            
+            
+            <div class="grid"></div> <!-- 빈공간 -->
+            <div class="grid" id="title">
+                <h4 class="tag">진로정보공유</h4>
+                <h1 class="writing">앱개발자 vs 웹개발자 자세히 알아보자!</h1>
+                <h5 class="inf">김재민 2026.06.29</h5>
+                <p class="contents"><br><br><br><br><br><br><br><br><br>여러분, 우리가 살면서 하루에 20번 이상은 하거나 보는 '이것'</p>
+                <p class="contents"><br><br><br><br><br><br><br><br><br>현재 컴퓨터와 스마트폰,  전자기기 양대산맥이라고 할 수 있는 것들의 존재의의라고 볼 수 있는 '이것'<br><br><br><br><br><br><br><br><br></p>
+                <p class="contents">'이것'은 무엇일까요.....?<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+                <div style="background-image: url('https://cdn.codingworldnews.com/news/photo/202010/img_1607_0.jpg'); width: 450px; height: 300px; background-size: cover; background-position: center;"></div>
+                <p class="contents">네, 정답은 앱과 웹입니다. </p>
+                <br><br><br><br><br><br><br><br><br><br><br>
+                <p class="contents">제목을 보고 맞추신 분도 계시겠지만<br>사실 이건 쉬우면서도 제목이 없다면 은근히 헷갈리는 문제였을겁니다. </p>
+                <p class="contents">그 이유는 왜일까요? </p>
+                <p class="contents">물론 다른 이유도 있겠지만 </p>
+                <p class="contents">저 앱이랑 웹이란게 우리 일상속에 자연스럽게 스며들었기 때문이라고 보는게 합당할 겁니다. </p>
+                <p class="contents">이렇게 앱과 웹은 이미 우리 생활과 땔려야 땔 수 없을만큼 우리에게 중요한것이 되었습니다. </p>
+                <p class="contents">그런데 여러분, 여러분은 이 앱과 웹이 무슨 차이가 있는지 아시나요? </p>
+                <p class="contents">그리고 앱과 웹을 개발하는 앱개발자와 웹개발자는 무슨 차이점이 있을까요? </p>
+                <p class="contents">요즘 앱을 보면 앱인데 웹페이지로 연결되는 앱이 있고<br>그 앱에서 앱의 기능과 웹페이지의 기능을 모두 사용할 수 있는걸 한번쯤 보셨을텐데요</p>
+                <p class="contents">이런 경우도 있는데 앱과 웹은 다른거라고 명확히 구분할 수 있는걸까요? </p>
+                <p class="contents">이런 점 때문에 같은 분야로 알고 계시는 분도 있고<br>그냥 앱이랑 웹이라는 이름이 다르니까 다르다고 생각하는 사람들도 있을겁니다.</p>
+                <p class="contents">엄연히 말하자면 둘 다 틀렸습니다.</p> 
+                <p class="contents">그럼 도대체 어떻게 되는 걸까요? 오늘은 이에 대해 알아보겠습니다.</p> 
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <div style="background-image: url('https://www.wisetracker.co.kr/wp-content/uploads/2017/01/Mobile-app.jpg'); width: 450px; height: 300px; background-size: cover; background-position: center;"></div>       
+                <p class="contents">안녕하세요 여러분 오늘은 앱과 웹에 대해 알아보도록 하겠습니다. </p>
+                <p class="contents">결론부터 말하자면 사실 기능도 비슷하고 배우는 것도 비슷합니다.<br>하지만 그렇다고 같은 분야가 아닌 미묘하게 다른 분야라고 볼 수 있습니다. </p>
+                <br><br><br><br><br><br><br>
+                <h3 style="border-bottom: 1px solid gray; padding-bottom: 10px"> 앱과 웹 차이점 </h3>
+                <p class="contents">상황을 가정해봅시다 </p>
+                <br><br><br><br>
+                <div style="background-image: url('https://www.urbanbrush.net/web/wp-content/uploads/edd/2022/01/urbanbrush-20220103113621688056.jpg'); width: 450px; height: 440px; background-size: cover; background-position: center;"></div>
+                <p class="contents">당신은 똑같은 광고를 앱에도 달아야되고 웹에도 달아야한다고 칩시다.<br>이에 대해 앱개발자 웹개발자에게 가서 얘기를 한다면 보통 답이 갈립니다 </p>
+                <p class="contents">웹개발자 : "알겠어 3일이면 될거야" </p>
+                <p class="contents">앱개발자 : "3일 가지고는 안되고 좀 오래걸릴거야" </p>
+                <p class="contents">답이 갈리는 이유를 알기 위해서는 서버와 클라이언트의 관계에 대해 알아볼 필요가 있습니다.</p>
+                <br><br><br><br>
+                <h3 style="border-bottom: 1px solid gray; padding-bottom: 10px">서버, 클라이언트 개념</h3>
+                <br><br>
+                <div style="background-image: url('http://www.sisaweek.com/news/photo/201905/121360_106877_4836.jpg'); width: 400px; height: 300px; background-size: cover; background-position: center;"></div>
+                <p class="contents">카카오톡을 예로 들어보겠습니다.</p>
+                <p class="contents">카카오톡에서 어떤 메시지를 적고 전송을 누르면 무슨 일이 벌어지냐면<br>
+                어플리케이션에서 정해진 목적지로 데이터들이 전송됩니다.</p>
+                <p class="contents">목적지 끝에 가면 결국에는 어떤 컴퓨터가 켜져 있는데요<br>
+                <p class="contents">그 컴퓨터가 24시간 돌아가기 때문에 여러분들이 낮에도, 밤에도, 새벽에도 카카오톡에서 전송 버튼을 누를 수 있는 것이죠.</p>
+                <p class="contents">여기서 여러분의 컴퓨터를 "클라이언트 컴퓨터"라고 부르고,<br>
+                24시간 켜져있는 컴퓨터는 "서버 컴퓨터"라고 부릅니다.</p>
+                <p class="contents">이 포인트가 앱과 웹을 가르는 포인트의 시작입니다.</p>
+                <br><br><br><br>
+                <h3 style="border-bottom: 1px solid gray; padding-bottom: 10px">웹</h3>
+                <div style="background-image: url('https://blog.kakaocdn.net/dn/cboyYY/btqD8OHLaTi/66B9V15FCMXmOl8VMmtZl1/img.png'); width: 430px; height: 300px; background-size: cover; background-position: center;"></div>
+                <p class="contents">웹의 경우, 기본적으로 구성되어 있는 게 새로고침인데요,</p>
+                <p class="contents">여러분들이 웹 사이트에 들어가서<br>
+                "www.naver.com"을 치고 엔터를 치면 무슨 일이 벌어지냐면</p>
+                <p class="contents">서버에 있는 HTML파일이 먼저 불러와집니다.<br>
+                    그리고 그 HTML파일에 연결되어 있는 수많은 파일들이 있는데요 (ex. 이미지 파일)</p>
+                <p class="contents">그 파일들을 불러와서 웹 페이지로 재구성되는 것이죠.<br>
+                    웹은 태생이 새로고침이기 때문에<br>
+                    웹 페이지는 서버에 있는 파일이 바뀌면 새로고침할 때마다 다시 바뀌게 됩니다.</p>
+                <br><br><br><br>
+                <h3 style="border-bottom: 1px solid gray; padding-bottom: 10px">앱</h3>
+                <div style="background-image: url('https://velog.velcdn.com/images%2Fhhi-5258%2Fpost%2F5c9d985e-cd6f-4746-8e46-f69820a13caa%2Fplaystore_4.jpeg'); width: 430px; height: 430px; background-size: cover; background-position: center;"></div>
+                <p class="contents">앱은 조금 다릅니다.<br>
+                    앱을 바꾸기 위해서는 업데이트라는 큰 과정이 필요합니다.<br>
+                    또 앱을 배포하기 위해서는 앱스토어 심사, 혹은 안드로이드 구글 마켓에 배포하는 과정을 겪어야 합니다.</p>
+                <p class="contents">여기서 가장 중요한 포인트는 <br>
+                    우리는 어플리케이션을 다운받은 이후에 즉각 업데이트하지 않는다는 것입니다.</p>
+                    <br><br>
+                
+                <p class="contents">앱 업데이트 언제 하시나요?
+
+                와이파이가 되는 환경에서 업데이트를 하거나 <br>
+                아니면 어플리케이션이 업데이트 해달라고 요청하니까 그제서야 업데이트를 하지 않나요?<br>
+                    
+                그말은 즉, 버전을 올렸다고 해서 모든 사람들이 그 버전을 이용하지 않는거죠.</p>
+
+                <p class="contents">요약하자면 웹은</p>
+                <p class="contents">개발자는 (수정할) 자바스크립트 파일이 서버에 들어가 있어서,<br>
+                    서버에 있는 그 파일을 작업해서 서버에 업데이트를 하면 됩니다.</p>
+                <p class="contents">그리고 앱은</p>
+                <p class="contents">기존에 만들어 놓지 않았다면,<br>
+                     그 공간을 앱 개발자가 새롭게 만들어서 업데이트를 해야 합니다.</p>
+                <br><br><br><br>
+                <h3 style="border-bottom: 1px solid gray; padding-bottom: 10px">공부과정</h3>
+                <p class="contents">앞서 앱과 웹 자체의 차이점을 알아보았다면<br> 
+                    이번에는 앱과 웹의 공부과정의 차이점을 살펴보겠습니다. </p>
+                <br><br><br>
+                <h3>웹개발자</h3>
+                <p class="contents">- java , jsp , spring , HTML5 , CSS</p>
+                
+                <p class="contents">추가적으로 웹디자인의 역활까지<br> 
+                하고자하는 웹퍼블리셔를 생각한다면<br> 
+                포토샵과 일러스트를 알아주신다면</p>
+                
+                <p class="contents">웹디자인까지 모두 할수있는<br> 
+                웹퍼블리셔라는 직업이 있습니다.</p>
+                <br><br><br>
+                <h3>앱개발자</h3>
+                <p class="contents">- java , jsp , spring , 리눅스 , 네트워크기초</p>
+
+
+                <p class="contents">결국 둘의 한끗차이는 서버와 네트워크기초<br> 
+                                    그리고 안드로이드 서버구축을<br> 
+                                    배우느냐 안배우느냐에 차이입니다.</p>
+
+                <p class="contents">결국 두가지의 가장 큰 핵심인<br> 
+                                    프로그래밍언어가 자바언어로<br> 
+                                    개발이 된다는것입니다.</p>
+                <br><br><br><br>
+                <h3 style="border-bottom: 1px solid gray; padding-bottom: 10px">최종정리</h3>
+                
+                <p class="contents">웹개발자
+                - 웹사이트 (홈페이지를 개발하는사람)</p>
+                                    
+                <p class="contents">앱개발자 (어플개발자)<br>
+                - 우리가사용하는 스마트폰에<br>
+                설치되는 모든 어플리케이션</p>
+                
+                                    
+                <p class="contents">하지면 현재는 웹사이트 홈페이지와<br>
+                어플리케이션 ,앱이 모두 연결되어</p>
+                                    
+                <p class="contents">융합되어 사용되는 부분이 많기때문에<br>
+                결국 웹개발 , 앱개발을 모두 할줄알아야<br>
+                훌륭한 개발자가 될 수 있다 할 수 있겠습니다.</p>
+
+
+            
+            
+                <br><br><br><br>
+                <div id="form-commentInfo">
+                    <div id="comment-count">댓글 <span id="count">0</span></div>
+                    <input id="comment-input" placeholder="댓글을 입력해 주세요.">
+                    <button id="submit">등록</button>
+                </div>
+                <div id=comments>
+            
+                </div>
+                <script src="index.js"></script>
+            </div>
+               
+
+            <div class="grid"></div> <!-- 빈공간 -->
+            
+            
+            
+            
+            
+            
+            
+            <div class="grid" style="border-top: 1px solid rgb(187, 186, 186);"></div>  <!-- 빈공간 -->
+            <div class="grid" style="border-top: 1px solid rgb(187, 186, 186);">
+                <p class="address">TEL. 010.4491.9291 </p>
+                
+            </div>
+            <div class="grid" style="border-top: 1px solid rgb(187, 186, 186);"></div>  <!-- 빈공간 -->
+        </div>
+                 
+</body>
+</html>

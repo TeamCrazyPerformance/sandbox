@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>홈페이지</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <script src="theme.js"></script>
+</head>
+<body>
+    <div class="block">
+            <div class="grid" style="border-bottom: 1px solid rgb(187, 186, 186);"></div> <!-- 빈공간 -->
+            <div class="grid" style="border-bottom: 1px solid  rgb(187, 186, 186); position: relative;">
+                <h1 class="title" style=" cursor: pointer;" onclick="location.href='index.html';">재민's web</h1>
+                <button id="theme-toggle">다크 모드</button>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="index.html" class="link" id="home">홈</a></li>
+                        <li><a href="방명록.html" class="link" id="visit">방명록</a></li>
+                        <li><a href="intro.html" class="link" id="intro">홈페이지 소개</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="grid" style="border-bottom: 1px solid  rgb(187, 186, 186);"></div> <!-- 빈공간 -->
+
+            <div class="grid"></div> <!-- 빈공간 -->
+            <div class="grid" style="border-right: 1px solid  rgb(187, 186, 186);;">
+                <h2 class="writing">방명록</h2>
+                
+                <div style="margin-left: 20px;"><div id="form-commentInfo">
+                    <input style="width: 600px;" id="comment-input" placeholder="방명록을 작성해 주세요.">
+                    <button id="submit">등록</button>
+                </div>
+                <div id="comments">
+            
+                </div>
+                <script src="guestbook.js"></script></div>
+            </div>
+
+            <!-- 우측 여백 영역 (v1.3 프로필 및 카테고리 사이드바 배치) -->
+            <div class="grid sidebar">
+                <div class="profile-box">
+                    <div class="profile-avatar">JM</div>
+                    <div class="profile-name">재민</div>
+                    <div class="profile-bio">잡다한 IT 지식을 기록하고 공부하는 개인 공간입니다.</div>
+                    <div class="profile-links">
+                        <a href="https://github.com" target="_blank">GitHub</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                        <a href="mailto:jaemin@example.com">Email</a>
+                    </div>
+                </div>
+
+                <div class="category-box">
+                    <h3 class="sidebar-title">카테고리</h3>
+                    <ul class="category-list">
+                        <li><a href="index.html">전체보기 (4)</a></li>
+                        <li><a href="index.html">개발 지식 (2)</a></li>
+                        <li><a href="index.html">임베디드 (1)</a></li>
+                        <li><a href="index.html">일상/임시 (1)</a></li>
+                    </ul>
+                </div>
+            </div> 
+            
+            <div class="grid" style="border-top: 1px solid rgb(187, 186, 186);"></div>  <!-- 빈공간 -->
+            <div class="grid" style="border-top: 1px solid rgb(187, 186, 186);">
+                <p class="address">TEL. 010.4491.9291 </p>
+            </div>
+            <div class="grid" style="border-top: 1px solid rgb(187, 186, 186);"></div>  <!-- 빈공간 -->
+    </div>
+</body>
+</html>
